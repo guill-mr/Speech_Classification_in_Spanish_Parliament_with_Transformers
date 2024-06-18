@@ -1,22 +1,11 @@
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report, confusion_matrix
-from sklearn.pipeline import Pipeline
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay, roc_auc_score, roc_curve, auc, confusion_matrix
 
-import klib as kl 
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 import plotly.express as px
 
 import seaborn as sns
-
-import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
+import matplotlib.lines as mlines
 
 """ PRE-PROCESSING FUNCTIONS """
 
