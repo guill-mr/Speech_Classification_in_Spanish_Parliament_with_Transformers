@@ -72,6 +72,19 @@ def limit_splitter(df, max_tokens):
     df['speech_text_preprocessed_len'] = df['speech_text_preprocessed_tokenized'].apply(lambda x: len(x))
     return df
 
+def remove_stopwords(tokens, stopwords_set):
+    return [token for token in tokens if token not in stopwords_set]
+
+def encode_data(data, word2vec_model):
+    encoded_data = []
+    for speech in data:
+        speech_vectors = []
+        for token in speech:
+            if token in word2vec_model:
+                speech_vectors.append(word2vec_model[token])
+        encoded_data.append(speech_vectors)
+    return encoded_data
+
 """ PLOT FUNCTIONS """
 
 def cool_party_plot(pred_df, color1='red', color2='skyblue', label1='PSOE', label2='PP'):
@@ -100,4 +113,14 @@ def cool_party_plot(pred_df, color1='red', color2='skyblue', label1='PSOE', labe
     plt.xlim([0.0, 1.0])
     plt.suptitle('Predicted Probabilities and True Classes', fontsize=15)
 
+    plt.show()
+
+def show_confusion_matrix(y_true, y_pred):
+    cm = confusion_matrix(y_true, y_pred)
+    
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt="d", cmap='Blues', xticklabels=['Class 0', 'Class 1'], yticklabels=['Class 0', 'Class 1'])
+    plt.xlabel('Predicted Label')
+    plt.ylabel('True Label')
+    plt.title('Confusion Matrix')
     plt.show()
