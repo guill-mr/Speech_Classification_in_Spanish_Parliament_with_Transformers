@@ -7,6 +7,8 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.lines as mlines
 
+from sklearn.metrics import confusion_matrix
+
 """ PRE-PROCESSING FUNCTIONS """
 
 def power_definer(df):
