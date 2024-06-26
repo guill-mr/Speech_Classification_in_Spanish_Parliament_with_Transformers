@@ -91,7 +91,7 @@ def encode_data(data, word2vec_model):
 
 def cool_party_plot(pred_df, color1='red', color2='skyblue', label1='PSOE', label2='PP'):
     # Two subplots
-    fig, axes = plt.subplots(2, 1, figsize=(18, 8), sharex=True, gridspec_kw={'height_ratios': [1, 1], 'hspace': 0.1})
+    fig, axes = plt.subplots(2, 1, figsize=(18, 8), dpi=300, sharex=True, gridspec_kw={'height_ratios': [1, 1], 'hspace': 0.1})
 
     # Plot density plots for each class on the first subplot (axes[0])
     sns.kdeplot(data=pred_df[pred_df['true'] == 0]['pred'], ax=axes[0], color=color1, fill=True, bw_adjust=0.5)
