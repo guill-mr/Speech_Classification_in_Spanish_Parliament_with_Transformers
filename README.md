@@ -24,6 +24,16 @@ in Spanish politics using Natural Language Processing techniques. The scope of t
 extend to identifying political ideologies in various speeches, thereby enhancing support for var-
 ious economic analyses
 
+## Data
+
+The data comes from an open source project called ParlaMint. The project team at ParlaMint has
+worked to create extensive metadata for each of the speeches, including speaker names, party
+affiliations, gender, age and position. We selected the Spanish corpus for our analysis.
+
+The Spanish corpus consists of 32,551 speeches from the Spanish parliament. The speeches span
+8 years from 2015 to 2023, and includes 5 legislative terms. In total, there were over 50 parties
+in the data including subgroups of the two major parties we are interested in, PP and PSOE.
+
 ## Results
 
 Our results indicate that the Transformer-based neural network outperforms the other baseline
