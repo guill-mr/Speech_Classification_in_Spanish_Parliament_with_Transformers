@@ -31,5 +31,7 @@ models, achieving an area under the curve (AUC) of 0.92 on the VOX-PODEMOS test 
 This slight improvement by our simple transformer architecture suggests that employing a more
 complex model, such as a large language model (LLM), could further enhance our results.
 
+____________
+
 ### Report Poster is available on the repository under "DL_Final_Poster_Breier_Mirabent"
 ### Transformer model is available under "Transformer_Model" notebook
