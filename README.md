@@ -1,4 +1,4 @@
-# Modeling Political Distances
+# Modeling Political Distances using Transformer Based Neural Network
 
 ### 27th June, 2024
 Mathieu Breier & Guillem Rubiat Mirabent
