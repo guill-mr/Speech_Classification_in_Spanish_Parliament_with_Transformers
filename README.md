@@ -23,3 +23,13 @@ This study builds upon the work of A. Bennett, M. Handt, and G. Mirabent on spee
 in Spanish politics using Natural Language Processing techniques. The scope of this study could
 extend to identifying political ideologies in various speeches, thereby enhancing support for var-
 ious economic analyses
+
+## Results
+
+Our results indicate that the Transformer-based neural network outperforms the other baseline
+models, achieving an area under the curve (AUC) of 0.92 on the VOX-PODEMOS test dataset.
+This slight improvement by our simple transformer architecture suggests that employing a more
+complex model, such as a large language model (LLM), could further enhance our results.
+
+### Report Poster is available on the repository under "DL_Final_Poster_Breier_Mirabent"
+### Transformer model is available under "Transformer_Model" notebook
