@@ -45,4 +45,3 @@ ____________
 
 ### Report Poster is available on the repository under "DL_Final_Poster_Breier_Mirabent"
 ### Transformer model is available under "Transformer_Model" notebook
-### Pre-Processed Data is located in the zip.file
